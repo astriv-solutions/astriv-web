@@ -1,4 +1,4 @@
-![Magic Portfolio](public/images/og/home.jpg)
+![Magic Portfolio](public/images/logo.webp)
 
 
 **Edit config**
