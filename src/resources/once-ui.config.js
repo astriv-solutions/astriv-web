@@ -1,7 +1,7 @@
 import { home } from "./content";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL = "https://demo.magic-portfolio.com";
+const baseURL = "https://astrivsolutions.com";
 
 const routes = {
   "/": true,
@@ -175,9 +175,10 @@ const mailchimp = {
 const schema = {
   logo: "",
   type: "Organization",
-  name: "Once UI",
+  name: "Astriv Solutions",
+
   description: home.description,
-  email: "lorant@once-ui.com",
+  email: "info@astrivsolutions.com",
 };
 
 // social links
