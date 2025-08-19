@@ -18,8 +18,10 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      Stay in the loop as we build the future of tech in Sri Lanka. 
+      Subscribe to our newsletter for exclusive updates on Astriv Solutions, 
+      behind the scenes looks at the development of Flaire, 
+      and insights from our founders.
     </>
   ),
 };
@@ -42,6 +44,11 @@ const social = [
     icon: "email",
     link: `mailto:${person.email}`,
   },
+  {
+    name: "Instagram",
+    icon: "instagram",
+    link: "https://www.instagram.com/astrivsolutions/",
+  },
 ];
 
 const home = {
@@ -50,23 +57,26 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing our work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Crafting the future of Sri Lankan tech, one breakthrough at a time.</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    title: <>Recent project: <strong className="ml-4">Flaire</strong></>,
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Founded in January 2025 by three visionaries, 
+      Astriv Solutions was born from a shared belief that technology should be a 
+      force for positive change. Our journey began with a single powerful idea, 
+      which quickly evolved into our flagship product: Flaire. We're dedicated to 
+      building solutions that revolutionize the software space in Sri Lanka.
     </>
   ),
 };
 
 const about = {
   path: "/about",
-  label: "About",
+  label: "About Us",
   title: `About – ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
@@ -85,28 +95,30 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        We are three co-founders with a shared passion for innovation and a 
+        commitment to making a tangible impact. We are united by a common goal: 
+        to build a company that not only creates groundbreaking products but also 
+        inspires a new generation of local tech entrepreneurs.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Our Products",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Flaire",
+        timeframe: "2025 - Present",
+        role: "Brand-Creator collaboration platform",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            User centric design: Our software is built with the user in mind, 
+            offering an intuitive experience that simplifies complex tasks.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Local innovation, global standard: Flaire is a testament to the fact 
+            that Sri Lankan talent can create world-class products that compete on 
+            a global stage.
           </>,
         ],
         images: [
@@ -119,45 +131,37 @@ const about = {
           },
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
     ],
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "About Founders",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Ravindu Liyanage",
+        description: <>CEO</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Methira Fernando",
+        description: <>COO</>,
+      },
+      {
+        name: "Quinn Winston",
+        description: <>CMO</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Our Vision",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "A Better Sri Lanka",
+        description: <>To be the catalyst for a new era of technology in Sri Lanka, 
+        building innovative software that empowers individuals and businesses to 
+        thrive on a global scale. We envision a future where Sri Lanka is recognized 
+        as a hub of world-class software innovation, and Astriv Solutions is at the 
+        forefront of that transformation.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -174,19 +178,6 @@ const about = {
           },
         ],
       },
-      {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
     ],
   },
 };
@@ -194,7 +185,7 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Get an exclusive look at our journey and insights into the future of tech in Sri Lanka.",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -202,16 +193,16 @@ const blog = {
 
 const work = {
   path: "/work",
-  label: "Work",
+  label: "Technology",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  description: `The Technology behind it by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
 
 const gallery = {
   path: "/gallery",
-  label: "Gallery",
+  label: "Design",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
   // Images by https://lorant.one
