@@ -102,55 +102,6 @@ const about = {
       </>
     ),
   },
-  work: {
-    display: true, // set to false to hide this section
-    title: "Our Products",
-    experiences: [
-      {
-        company: "Flaire",
-        timeframe: "2025 - Present",
-        role: "Brand-Creator collaboration platform",
-        achievements: [
-          <>
-            User centric design: Our software is built with the user in mind, 
-            offering an intuitive experience that simplifies complex tasks.
-          </>,
-          <>
-            Local innovation, global standard: Flaire is a testament to the fact 
-            that Sri Lankan talent can create world-class products that compete on 
-            a global stage.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-    ],
-  },
-  studies: {
-    display: true, // set to false to hide this section
-    title: "About Founders",
-    institutions: [
-      {
-        name: "Ravindu Liyanage",
-        description: <>CEO</>,
-      },
-      {
-        name: "Methira Fernando",
-        description: <>COO</>,
-      },
-      {
-        name: "Quinn Winston",
-        description: <>CMO</>,
-      },
-    ],
-  },
   technical: {
     display: true, // set to false to hide this section
     title: "Our Vision",
@@ -180,12 +131,62 @@ const about = {
       },
     ],
   },
+  work: {
+    display: true, // set to false to hide this section
+    title: "Our Products",
+    experiences: [
+      {
+        company: "Flaire",
+        timeframe: "2025 - Present",
+        role: "Brand-Creator collaboration platform",
+        achievements: [
+          <>
+            User centric design: Our software is built with the user in mind, 
+            offering an intuitive experience that simplifies complex tasks.
+          </>,
+          <>
+            Local innovation, global standard: Flaire is a testament to the fact 
+            that Sri Lankan talent can create world-class products that compete on 
+            a global stage.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover-01.jpg",
+            alt: "Flaire",
+            width: 32,
+            height: 9,
+          },
+        ],
+      },
+    ],
+  },
+  studies: {
+    display: true, // set to false to hide this section
+    title: "About Founders",
+    institutions: [
+      {
+        name: "Ravindu Liyanage",
+        description: <>CEO</>,
+      },
+      {
+        name: "Methira Fernando",
+        description: <>COO</>,
+      },
+      {
+        name: "Quinn Winston",
+        description: <>CMO</>,
+      },
+    ],
+  },
+  
 };
 
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Get an exclusive look at our journey and insights into the future of tech in Sri Lanka.",
+  title: "Get an exclusive look at our journey and the future of tech in Sri Lanka.",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -203,10 +204,8 @@ const work = {
 const gallery = {
   path: "/gallery",
   label: "Design",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
+  title: `Design gallery – ${person.name}`,
+  description: `A design collection by ${person.name}`,
   images: [
     {
       src: "/images/gallery/horizontal-1.jpg",
