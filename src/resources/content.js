@@ -61,7 +61,7 @@ const home = {
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Flaire</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "https://flaireapp.co/",
   },
   subline: (
     <>
