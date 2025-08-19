@@ -85,7 +85,7 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://links.astrivsolutions.com/booking",
   },
   intro: {
     display: true,
