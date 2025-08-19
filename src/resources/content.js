@@ -113,13 +113,13 @@ const about = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/projects/userfirst/cover-02.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/userfirst/cover-03.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -150,7 +150,7 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/userfirst/cover-01.jpg",
             alt: "Flaire",
             width: 32,
             height: 9,
