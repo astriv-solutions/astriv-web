@@ -56,8 +56,8 @@ const home = {
   label: "Home",
   headline: <>Crafting the future of Sri Lankan tech.</>,
   image: "/images/banner.webp",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing our work as a ${person.role}`,
+  title: `${person.name}`,
+  description: `Welcome to ${person.name}, a tech startup based in Sri Lanka.`,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Flaire</strong></>,
