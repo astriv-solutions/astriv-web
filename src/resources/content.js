@@ -55,6 +55,9 @@ const home = {
   path: "/",
   label: "Home",
   headline: <>Crafting the future of Sri Lankan tech.</>,
+  image: "/images/banner.webp",
+  title: `${person.name}'s Portfolio`,
+  description: `Portfolio website showcasing our work as a ${person.role}`,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Flaire</strong></>,
