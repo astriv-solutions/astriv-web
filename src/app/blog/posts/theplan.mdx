@@ -5,74 +5,25 @@ publishedAt: "2025-02-14"
 tag: "Magic Portfolio"
 ---
 
-## Manage projects
+## At Ravindus Place  
 
-You can create, edit and delete projects by adding, modifying or removing `*.mdx` files in the `src/app/work/projects` directory.
+On February 14th, 2025, while others celebrated Valentine’s Day, we were deep 
+in strategy mode. That day, we made a bold, almost crazy plan: learn coding in 
+2 months using YouTube tutorials, build Flaire with Flutter, and release an MVP 
+in another 2 months.
 
-## Frontmatter
+Why this approach? Because we didn’t want to waste time waiting for perfect 
+conditions. We didn’t have a full-time developer, and we didn’t have millions 
+in funding, but we had one advantage: speed. We believed that speed could 
+compensate for resources if paired with relentless execution.
 
-The frontmatter is used to set the project's metadata: title, description, image, and tags. It's used in the project's page and in meta- and open graph tags.
+The plan was simple on paper:
 
-<CodeBlock
-    marginBottom="16"
-    codes={[
-      {
-        code:
-`---
-title: "Developing a design system for indie creators"
-publishedAt: "2025-03-17"
-summary: "Once UI is a design system that empowers indie creators, small teams, and startups to build web applications."
-images:
-  - "/images/projects/userfirst/cover-02.jpg"
-  - "/images/projects/userfirst/image-03.jpg"
-team:
-  - name: "Lorant One"
-    role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
-link: "https://once-ui.com/"
----`,
-        language: "tsx",
-        label: "src/app/work/projects/project-1.mdx"
-      }
-    ]}
-/>
+Step 2: Start coding Flaire immediately while still learning.
 
-## MDX syntax
+Step 3: Release an MVP within the next 60 days to test the concept in the real market.
 
-You can use MDX to write the content of your projects. It helps you write rich and dynamic content with minimal code. Some MDX elements will be automatically transformed to Once UI components to integrate better in the design and add additional functionality.
-
-## Custom components
-
-You can use custom components in MDX files, but you need to import them first in the `src/components/mdx.tsx` file.
-
-<CodeBlock
-    marginBottom="16"
-    highlight="11-12"
-    codes={[
-      {
-        code:
-`const components = {
-    p: createParagraph as any,
-    h1: createHeading(1) as any,
-    h2: createHeading(2) as any,
-    h3: createHeading(3) as any,
-    h4: createHeading(4) as any,
-    h5: createHeading(5) as any,
-    h6: createHeading(6) as any,
-    img: createImage as any,
-    a: CustomLink as any,
-    Table,
-    CodeBlock,
-};`,
-        language: "tsx",
-        label: "src/components/mdx.tsx"
-      }
-    ]}
-/>
-
-As you can see, the `Table` and `CodeBlock` components are already imported and available for use. You can add more by simply importing them to this file and passing them to the `components` object.
-
-## Hot reload
-
-Hot reload of MDX files is currently not supported, but we're working on it.
+Looking back, it was ambitious, maybe even reckless. But that plan became the 
+foundation of our work ethic: no excuses, just rapid learning and building. 
+It taught us that startups are not about waiting for expertise. They’re about 
+creating it under pressure.

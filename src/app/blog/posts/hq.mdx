@@ -5,104 +5,21 @@ publishedAt: "2025-01-12"
 tag: "Magic Portfolio"
 ---
 
-## Mailchimp account
+## Homagama
 
-Sign up for a [Mailchimp account](https://mailchimp.com) and create a new list if you don't have one.
+Every startup has its origin story and for Flaire, it’s not in a fancy office 
+or co-working space. It’s in Quinn’s house in Homagama.
 
-## Embed form
+When we began, renting an office sounded professional, but practicality spoke 
+louder. We needed a space where ideas could flow without the pressure of overhead 
+costs. Quinn’s house became the obvious choice: spacious enough for brainstorming, 
+quiet enough for deep work, and most importantly, it gave us the flexibility to
+operate without burning cash on rent in our early days.
 
-Create a new [embed form](https://mailchimp.com/help/add-a-signup-form-to-your-website/) and copy the form URL to your Magic Portfolio config.
+This decision wasn’t just about saving money, it was about culture. A home base 
+fosters trust and collaboration. It allowed us to work late nights, have honest 
+conversations about product challenges, and move fast without formalities.
 
-<CodeBlock
-    highlight="2"
-    codes={[
-  {
-    code:
-`const mailchimp = {
-    action: 'https://url/subscribe/post?parameters',
-    effects: {
-      ...
-    }
-};`, 
-    language: "tsx",
-    label: "src/app/resources/config.js"
-  }
-]} />
-
-## Newsletter content
-
-You can modify the headline and description in the `content.js` file.
-
-<CodeBlock
-    highlight="2"
-    codes={[
-  {
-    code:
-`const newsletter = {
-    display: true,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: (
-      <>
-        I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.
-      </>
-    ),
-};`, 
-    language: "tsx",
-    label: "src/app/resources/content.js"
-  }
-]} />
-
-## Background effect
-
-There's a pre-configured background in `Mailchimp.tsx` that you can modify in the `mailchimp` object. Set graphic elements such as gradient, dots, lines, and grid and configure their appearance for the newsletter block.
-
-<CodeBlock
-    codeHeight={24}
-    marginBottom="16"
-    codes={[
-  {
-    code:
-`const mailchimp = {
-    action: 'https://url/subscribe/post?parameters',
-    effects: {
-      mask: {
-        cursor: false,
-        x: 50,
-        y: 0,
-        radius: 100
-      },
-      gradient: {
-        display: true,
-        x: 50,
-        y: -25,
-        width: 100,
-        height: 100,
-        tilt: 0,
-        colorStart: 'accent-background-strong',
-        colorEnd: 'static-transparent',
-        opacity: 50
-      },
-      dots: {
-        display: true,
-        size: 2,
-        color: 'brand-on-background-weak',
-        opacity: 20
-      },
-      lines: {
-        display: false,
-        color: 'neutral-alpha-weak',
-        opacity: 100
-      },
-      grid: {
-        display: false,
-        color: 'neutral-alpha-weak',
-        opacity: 100,
-        width: 'var(--static-space-32)',
-        height: 'var(--static-space-32)'
-      }
-  }
-}`, 
-    language: "tsx",
-    label: "src/app/resources/config.js"
-  }
-]} />
+Someday, we’ll have sleek offices with glass walls and city views. But Flaire’s 
+story will always begin here, in a living room in Homagama, where bold ideas turned 
+into our first real steps toward building something game changing.
