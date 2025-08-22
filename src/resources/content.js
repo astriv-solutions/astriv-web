@@ -14,7 +14,7 @@ const person = {
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -53,15 +53,15 @@ const social = [
 
 const home = {
   path: "/",
-  image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing our work as a ${person.role}`,
-  headline: <>Crafting the future of Sri Lankan tech, one breakthrough at a time.</>,
+  headline: <>Crafting the future of Sri Lankan tech.</>,
+  image: "/images/banner.webp",
+  title: `${person.name}`,
+  description: `Welcome to ${person.name}, a tech startup based in Sri Lanka.`,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Flaire</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "https://flaireapp.co/",
   },
   subline: (
     <>
@@ -88,7 +88,7 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://links.astrivsolutions.com/booking",
   },
   intro: {
     display: true,
@@ -101,6 +101,35 @@ const about = {
         inspires a new generation of local tech entrepreneurs.
       </>
     ),
+  },
+  technical: {
+    display: true, // set to false to hide this section
+    title: "Our Vision",
+    skills: [
+      {
+        title: "A Better Sri Lanka",
+        description: <>To be the catalyst for a new era of technology in Sri Lanka, 
+        building innovative software that empowers individuals and businesses to 
+        thrive on a global scale. We envision a future where Sri Lanka is recognized 
+        as a hub of world-class software innovation, and Astriv Solutions is at the 
+        forefront of that transformation.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/userfirst/cover-02.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/userfirst/cover-03.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+    ],
   },
   work: {
     display: true, // set to false to hide this section
@@ -124,9 +153,9 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
+            src: "/images/projects/userfirst/cover-01.jpg",
+            alt: "Flaire",
+            width: 32,
             height: 9,
           },
         ],
@@ -151,41 +180,13 @@ const about = {
       },
     ],
   },
-  technical: {
-    display: true, // set to false to hide this section
-    title: "Our Vision",
-    skills: [
-      {
-        title: "A Better Sri Lanka",
-        description: <>To be the catalyst for a new era of technology in Sri Lanka, 
-        building innovative software that empowers individuals and businesses to 
-        thrive on a global scale. We envision a future where Sri Lanka is recognized 
-        as a hub of world-class software innovation, and Astriv Solutions is at the 
-        forefront of that transformation.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-    ],
-  },
+  
 };
 
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Get an exclusive look at our journey and insights into the future of tech in Sri Lanka.",
+  title: "Get an exclusive look at our journey and the future of tech in Sri Lanka.",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -203,10 +204,8 @@ const work = {
 const gallery = {
   path: "/gallery",
   label: "Design",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
+  title: `Design gallery – ${person.name}`,
+  description: `A design collection by ${person.name}`,
   images: [
     {
       src: "/images/gallery/horizontal-1.jpg",
