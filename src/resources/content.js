@@ -18,10 +18,9 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      Stay in the loop as we build the future of tech in Sri Lanka. 
-      Subscribe to our newsletter for exclusive updates on Astriv Solutions, 
-      behind the scenes looks at the development of Flaire, 
-      and insights from our founders.
+      Stay in the loop as we build the future of tech in Sri Lanka. Subscribe to
+      our newsletter for exclusive updates on Astriv Solutions, behind the
+      scenes looks at the development of Flaire, and insights from our founders.
     </>
   ),
 };
@@ -32,12 +31,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/astrivsolutions",
+    link: "https://github.com/astriv-solutions",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/astrivsolutions",
+    link: "https://www.linkedin.com/company/astriv-solutions/",
   },
   {
     name: "Email",
@@ -47,7 +46,7 @@ const social = [
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/astrivsolutions/",
+    link: "https://www.instagram.com/flaireapp.co/",
   },
 ];
 
@@ -60,16 +59,20 @@ const home = {
   description: `Welcome to ${person.name}, a tech startup based in Sri Lanka.`,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Flaire</strong></>,
+    title: (
+      <>
+        Recent project: <strong className="ml-4">Flaire</strong>
+      </>
+    ),
     href: "https://flaireapp.co/",
   },
   subline: (
     <>
-      Founded in January 2025 by three visionaries, 
-      Astriv Solutions was born from a shared belief that technology should be a 
-      force for positive change. Our journey began with a single powerful idea, 
-      which quickly evolved into our flagship product: Flaire. We're dedicated to 
-      building solutions that revolutionize the software space in Sri Lanka.
+      Founded in January 2025 by three visionaries, Astriv Solutions was born
+      from a shared belief that technology should be a force for positive
+      change. Our journey began with a single powerful idea, which quickly
+      evolved into our flagship product: Flaire. We're dedicated to building
+      solutions that revolutionize the software space in Sri Lanka.
     </>
   ),
 };
@@ -87,7 +90,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://links.astrivsolutions.com/booking",
   },
   intro: {
@@ -95,10 +98,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        We are three co-founders with a shared passion for innovation and a 
-        commitment to making a tangible impact. We are united by a common goal: 
-        to build a company that not only creates groundbreaking products but also 
-        inspires a new generation of local tech entrepreneurs.
+        We are three co-founders with a shared passion for innovation and a
+        commitment to making a tangible impact. We are united by a common goal:
+        to build a company that not only creates groundbreaking products but
+        also inspires a new generation of local tech entrepreneurs.
       </>
     ),
   },
@@ -108,21 +111,25 @@ const about = {
     skills: [
       {
         title: "A Better Sri Lanka",
-        description: <>To be the catalyst for a new era of technology in Sri Lanka, 
-        building innovative software that empowers individuals and businesses to 
-        thrive on a global scale. We envision a future where Sri Lanka is recognized 
-        as a hub of world-class software innovation, and Astriv Solutions is at the 
-        forefront of that transformation.</>,
+        description: (
+          <>
+            To be the catalyst for a new era of technology in Sri Lanka,
+            building innovative software that empowers individuals and
+            businesses to thrive on a global scale. We envision a future where
+            Sri Lanka is recognized as a hub of world-class software innovation,
+            and Astriv Solutions is at the forefront of that transformation.
+          </>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/userfirst/cover-02.jpg",
+            src: "/images/projects/userfirst/namebannerdark.webp",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/userfirst/cover-03.jpg",
+            src: "/images/projects/userfirst/logobannerdark.webp",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -141,19 +148,19 @@ const about = {
         role: "Brand-Creator collaboration platform",
         achievements: [
           <>
-            User centric design: Our software is built with the user in mind, 
+            User centric design: Our software is built with the user in mind,
             offering an intuitive experience that simplifies complex tasks.
           </>,
           <>
-            Local innovation, global standard: Flaire is a testament to the fact 
-            that Sri Lankan talent can create world-class products that compete on 
-            a global stage.
+            Local innovation, global standard: Flaire is a testament to the fact
+            that Sri Lankan talent can create world-class products that compete
+            on a global stage.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/userfirst/cover-01.jpg",
+            src: "/images/projects/userfirst/logonamebannerdark.webp",
             alt: "Flaire",
             width: 32,
             height: 9,
@@ -180,13 +187,13 @@ const about = {
       },
     ],
   },
-  
 };
 
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Get an exclusive look at our journey and the future of tech in Sri Lanka.",
+  title:
+    "Get an exclusive look at our journey and the future of tech in Sri Lanka.",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -218,32 +225,7 @@ const gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
       src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
       alt: "image",
       orientation: "vertical",
     },
